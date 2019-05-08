@@ -1,0 +1,16 @@
+apiVersion: V1
+kind: Pod
+metadata:
+  name: postgres-pod
+  labels: 
+    name: postgres-pod
+    app: demo-app-pod
+
+
+
+spec:
+  containers:
+  - name: postgres
+    image: postgres:9.4
+    ports:
+    - containers: 5432
